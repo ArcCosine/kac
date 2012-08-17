@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets">
+    <name>Key action canceler</name>
+    <description  xml:lang="en">Cancel to web service and Opera's default key action</description>
+    <description  xml:lang="ja">WebサービスやOperaのキー操作をキャンセルします</description>
+	<access origin="https://google.com"  subdomains="true" />
+	<access origin="https://twitter.com"  subdomains="true" />
+    <author href="http://www.tunsns.net/" email="arc@tunsns.net">Arc Cosine</author>
+    <content src="index.html" type="text/html" encoding="UTF-8" />
+</widget>

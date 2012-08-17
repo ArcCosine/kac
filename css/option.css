@@ -1,0 +1,6 @@
+@charset "UTF-8"
+
+head, body, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+}

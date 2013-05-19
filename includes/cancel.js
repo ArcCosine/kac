@@ -8,6 +8,7 @@
 // @include	  http://www.google.com/reader/*
 // @include	  https://www.google.com/reader/*
 // @include   https://www.google.com/calendar/*
+// @include   https://github.com/*
 // @include	  http://twitter.com/*
 // @include	  https://twitter.com/*
 // @author    Arc Cosine
@@ -20,6 +21,7 @@
 	var PressConf = {
 		'www.tumblr.com': 'JK',
 		'www.pixiv.net': 'JK',
+		'github.com': 'JK',
 		'mail.google.com' : 'G',
 		'www.google.com' : 'G',
 		'twitter.com'    : '.'

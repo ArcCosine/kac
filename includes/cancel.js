@@ -21,7 +21,6 @@
 	var PressConf = {
 		'www.tumblr.com': 'JK',
 		'www.pixiv.net': 'JK',
-		'github.com': 'JK',
 		'mail.google.com' : 'G',
 		'www.google.com' : 'G',
 		'twitter.com'    : '.'
@@ -30,7 +29,8 @@
 	//You can add more domain and key.
 	//Cancel Web site's Action Key
 	var DefActionConf = {
-		'www.google.com' : '12'
+		'www.google.com' : '12',
+		'github.com': 'G'
 	};
 
 	function actionCancel(data, conf ){
@@ -39,8 +39,9 @@
 		if( /INPUT|TEXTAREA/.test(data.tag) ) return;
 		var keyList = conf[window.location.host];
 		var key = String.fromCharCode(data.key).toUpperCase();
-		if( keyList.indexOf(key) < 0 ) return;
-		if( eve.ctrlKey || eve.altKey ) return;	//if press Ctrlkey  or Altkey then ignore event
+		if( typeof keyList  === "undefined" || typeof key === "undefined" ){ return ; }
+		if( keyList.indexOf(key) < 0 ){ return; }
+		if( eve.ctrlKey || eve.altKey ){ return; } //if press Ctrlkey  or Altkey then ignore event
 		data.eve.preventDefault();
 	};
 

@@ -12,7 +12,7 @@
 // @include	  http://twitter.com/*
 // @include	  https://twitter.com/*
 // @author    Arc Cosine
-// @version   2.1
+// @version   2.2
 // ==/UserScript==
 (function(win,doc){
 
